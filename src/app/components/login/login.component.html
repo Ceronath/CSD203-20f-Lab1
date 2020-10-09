@@ -1,1 +1,6 @@
-<IonInput placeholder="Email"></IonInput>
+<ion-label>Email</ion-label>
+<ion-input type="email"></ion-input>
+<ion-label>Password</ion-label>
+<ion-input color="primary" type="password"></ion-input>
+<ion-button type="submit" (click)="signIn()">Submit</ion-button>
+<h1 *ngIf="auth.isLoggedIn()">You're logged in!</h1>
