@@ -1,7 +1,7 @@
 import { summaryFileName } from '@angular/compiler/src/aot/util';
 import { Injectable } from '@angular/core';
 import { Plugins, CameraResultType, Capacitor, FilesystemDirectory, CameraPhoto, CameraSource } from '@capacitor/core';
-import { resolve } from 'dns';
+//import { resolve } from 'dns';
 const { Camera, Filesystem, Storage } = Plugins;
 @Injectable({
   providedIn: 'root'
