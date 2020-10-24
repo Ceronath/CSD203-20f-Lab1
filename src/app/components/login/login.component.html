@@ -1,6 +1,8 @@
 <ion-label>Email</ion-label>
-<ion-input type="email"></ion-input>
+<ion-input [(ngModel)]="email" type="email"></ion-input>
 <ion-label>Password</ion-label>
-<ion-input color="primary" type="password"></ion-input>
+<ion-input [(ngModel)]="password" color="primary" type="password"></ion-input>
 <ion-button type="submit" (click)="signIn()">Submit</ion-button>
-<h1 *ngIf="auth.isLoggedIn()">You're logged in!</h1>
+<button (click)="signInWithGoogle()">Sign in with Google</button>
+<h1 *ngIf="auth.isLoggedIn()">You are signed in as {{auth.getUserData().email}}!</h1>
+<ion-button routerLink="/user-benefits">Info</ion-button>
